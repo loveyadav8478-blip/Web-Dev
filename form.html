@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        .name {
+            padding: 10px;
+            margin: 22px;
+        }
+
+        .date {
+            padding: 15px;
+        }
+        .container{
+            text-align: left;
+            /* border: 2px solid black; */
+        }
+        .btn{
+            text-align: center;
+        }
+
+        .form {
+            align-content: center;
+        }
+        body{
+            background-color: rgb(120, 186, 216);
+        }
+    </style>
+</head>
+
+<body>
+    <form action="/submit" class="form">
+        <div class="container">
+            <h1>Registration Form</h1>
+            <div class="name">
+                <label for="text">First Name</label>
+                <input type="text" placeholder="Enter First name">
+            </div>
+            <div class="name">
+                <label for="text">Last Name</label>
+                <input type="text" placeholder="Enter Last name">
+            </div>
+            <div class="name">
+                <label for="date">Date Of Birth</label>
+                <input type="date" placeholder="Enter DOB">
+            </div>
+            <div class="name">
+                <label for="email">Enter email</label>
+                <input type="email" placeholder="Enter email">
+            </div>
+            <div class="name">
+                <label for="input">Password</label>
+                <input type="password" placeholder="Enter password">
+            </div>
+
+            <div class="name">
+                <label for="Gender">Gender</label>
+                <select name="Gender" id="">
+                    <option value="" selected disabled>Select Gender</option>
+                    <option value="gender">Male</option>
+                    <option value="gender">Female</option>
+                    <option value="gender">Custom</option>
+                </select>
+            </div>
+            <label for="" class="name">Address</label>
+            <textarea name="text" id=""></textarea>
+            
+            <div class="name">
+                <span>Upload File</span><input type="file">
+                <label for="file"></label>
+            </div>
+            <div class="name">
+                <input id="terms" type="checkbox" required>
+                <label for="terms">I agree to the terms and conditions</label>
+            </div>
+            <div class="name">
+                <button class="btn">Submit</button>
+            </div>
+
+        </div>
+
+    </form>
+</body>
+
+</html>
